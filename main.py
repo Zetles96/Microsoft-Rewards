@@ -12,7 +12,7 @@ def main():
     driver.get("https://www.bing.com/")
     driver.implicitly_wait(0.5)
     for i in string_list:
-        driver.find_element(by=By.ID, value="sb_form_q").send_keys(string_list, Keys.ENTER)
+        driver.find_element(by=By.ID, value="sb_form_q").send_keys(i, Keys.ENTER)
         driver.implicitly_wait(0.5)
     input()
     pass
